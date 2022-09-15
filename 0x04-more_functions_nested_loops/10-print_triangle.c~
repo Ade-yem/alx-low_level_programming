@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * print_diagonal - This function draws a triangle
+ * on the terminal
+ * @size: The number of times the character # should be printed
+ */
+void print_triangle(int size)
+{
+	/* # and space variable */
+	int sl, sp;
+
+	if (size > 0)
+	{
+		for (sl = 0; sl < size; sl++)
+		{
+			for (sp = size; sp > sl; sp--)
+			{
+				_putchar(' ');
+			}
+			_putchar('#');
+			_putchar('\n');
+		}
+
+	}
+	if (size <= 0)
+		_putchar('\n');
+}
