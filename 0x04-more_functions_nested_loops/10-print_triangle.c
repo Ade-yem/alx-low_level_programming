@@ -7,16 +7,20 @@
  */
 void print_triangle(int size)
 {
-	int i, j;
+	int row, column, space, pound;
 
-	for (i = 0; i < size; i++)
+	if (size <= 0)
+		_putchar('\n');
+
+	for (row = 0; row < size; row++)
 	{
-		for (j = 1; j < (size - i); j++)
+		column = size - 1 - row;
+
+		for (space = column; space > 0; space--)
 			_putchar(' ');
-		for (j--; j < size; j++)
+		for (pound = size - column; pound > 0; pound--)
 			_putchar(35);
-		if (i < (size - 1))
-			_putchar('\n');
+
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
