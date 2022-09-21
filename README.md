@@ -1,1 +1,1 @@
-This repo is for ALX C programming language projects
+0x06. C - More pointers, arrays and strings
