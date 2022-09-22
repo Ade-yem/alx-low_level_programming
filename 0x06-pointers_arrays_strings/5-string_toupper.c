@@ -8,18 +8,14 @@
 
 char *string_toupper(char *s)
 {
-	int count = 0, i, j;
+	int count = 0;
 
-	while (s[count] != '\0')
+	while (*(s + count) != '\0')
 	{
-		for (i = 97; i <= 122; i++)
-		{
-			if (s[count] == i)
-			{
-				s[count] = i - 32;
-			}
-		}
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
 		count++;
 	}
+
 	return (s);
 }
