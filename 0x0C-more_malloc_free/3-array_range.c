@@ -2,11 +2,14 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * array_range - creates an array of integers.
+ * @min: minimum value.
+ * @max: maximum value.
  *
- * Return: Always 0.
+ * Return: pointer to the newly created array.
+ * if man > mix, returns NULL.
+ * if malloc fails, returns NULL.
  */
-
 int *array_range(int min, int max)
 {
 	int *p;
