@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int result, fn1, fn2;
-        int (*op)(int, int);
+	int (*op)(int, int);
 
 	if (argc != 4)
 	{
@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 
 	fn1 = atoi(argv[1]);
 	fn2 = atoi(argv[3]);
-
 	op = get_op_func(argv[2]);
 	if (op == NULL)
 	{
