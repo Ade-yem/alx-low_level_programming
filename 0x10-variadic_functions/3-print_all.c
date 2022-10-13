@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == formats[k] && c)
 			{
-				printf("' ");
+				printf(", ");
 				break;
 			} k++;
 		}
