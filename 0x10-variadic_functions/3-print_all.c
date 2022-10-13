@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	char *str;
-	int i = 0, c = 0, k;
+	unsigned int i = 0, c = 0, k;
 	char formats[] = "cifs";
 
 	va_start(ap, format);
