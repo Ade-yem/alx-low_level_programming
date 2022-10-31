@@ -103,12 +103,12 @@ void print_osabi(char *ptr)
 }
 
 
-OB/**
-OB * print_version - prints version
+/**
+ * print_version - prints version
  * @ptr: magic.
  * Return: no return.
-OBOBOBOB */
-OBOBOBvoid print_version(char *ptr)
+ */
+void print_version(char *ptr)
 {
 	int version = ptr[6];
 
@@ -126,14 +126,14 @@ void print_osabi(char *ptr)
  */
 void print_data(char *ptr)
 {
-OA	char data = ptr[5];
-OAOAOAOAOAOA
-OAOA	printf("  Data:                              2's complement");
-OAOAOAOA	if (data == 1)
-OAOA		printf(", little endian\n");
-OAOA
-OAOAOA	if (data == 2)
-OAOAOA		printf(", big endian\n");
+	char data = ptr[5];
+
+	printf("  Data:                              2's complement");
+	if (data == 1)
+		printf(", little endian\n");
+
+	if (data == 2)
+		printf(", big endian\n");
 }
 /**
  * print_magic - prints magic info.
