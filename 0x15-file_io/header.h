@@ -1,3 +1,6 @@
+#ifndef HEADER_H_
+#define HEADER_H_
+
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -175,3 +178,5 @@ void print_osabi(unsigned char *e_ident)
 		printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 	}
 }
+
+#endif
