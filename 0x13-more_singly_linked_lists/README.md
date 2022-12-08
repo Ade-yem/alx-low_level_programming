@@ -1,4 +1,4 @@
-#0x13. C - More singly linked lists
+# 0x13. C - More singly linked lists
 
 tags:
-##C Algorithm Data structure
+## C Algorithm Data structure
