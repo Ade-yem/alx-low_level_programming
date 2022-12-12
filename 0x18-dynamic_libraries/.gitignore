@@ -2,3 +2,5 @@
 *.o
 *main.c
 *.py
+*.c
+len
