@@ -2,7 +2,7 @@
 
 /**
  * hash_arr - function to add array.
- * @arr: the array from the table
+ * @array: the array from the table
  * @key: is the key. key can not be an empty string
  * @value: is the value associated with the key
  * Return: the array with its value set
