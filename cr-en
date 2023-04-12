@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Enter the folder name"
+echo "Enter the directory name"
 read folder
-echo "creatind folder..."
-mkdir $folder
+echo "creating folder..."
+mkdir "$folder"
 echo "entering folder..."
 cd $folder
 echo "enter readme"
@@ -10,4 +10,4 @@ read readme
 echo "$readme" >> README.md
 echo "created readme"
 echo "folder created and initialized"
-cd $folder
+#cd $folder
