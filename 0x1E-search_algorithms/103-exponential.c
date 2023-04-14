@@ -38,7 +38,7 @@ int binary__search(int *array, size_t left, size_t right, int value)
 }
 
 /**
- * recursive_search - searches for a value in an array of
+ * exponential_search - searches for a value in an array of
  * integers using the Binary search algorithm
  * @array: input array
  * @size: size of the array
